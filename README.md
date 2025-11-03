@@ -1,4 +1,4 @@
-# TMX Rate Records Migration
+# Rate Records Script
 
 Migration script to add charge profile groups to rate records JSON files.
 
