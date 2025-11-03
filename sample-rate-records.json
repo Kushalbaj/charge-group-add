@@ -1,0 +1,115 @@
+[
+  {
+    "_id": {
+      "$oid": "60a1b2c3d4e5f6789abcdef0"
+    },
+    "rateId": "RATE001",
+    "rateName": "Standard Shipping Rate",
+    "effectiveDate": "2024-01-01",
+    "chargeGroups": [
+      {
+        "_id": {
+          "$oid": "60a1b2c3d4e5f6789abcdef1"
+        },
+        "chargeGroupName": "Base Charges",
+        "chargeProfileGroups": [
+          {
+            "$oid": "67d112e88205a525e17e1050"
+          },
+          {
+            "$oid": "67d112e88205a525e17e1051"
+          }
+        ],
+        "charges": [
+          {
+            "chargeType": "freight",
+            "amount": 100.00,
+            "currency": "USD"
+          }
+        ]
+      },
+      {
+        "_id": {
+          "$oid": "60a1b2c3d4e5f6789abcdef2"
+        },
+        "chargeGroupName": "Additional Fees",
+        "chargeProfileGroups": [],
+        "charges": [
+          {
+            "chargeType": "fuel_surcharge",
+            "amount": 15.50,
+            "currency": "USD"
+          }
+        ]
+      }
+    ],
+    "origin": "Los Angeles, CA",
+    "destination": "New York, NY"
+  },
+  {
+    "_id": {
+      "$oid": "60a1b2c3d4e5f6789abcdef3"
+    },
+    "rateId": "RATE002",
+    "rateName": "Express Delivery Rate",
+    "effectiveDate": "2024-01-01",
+    "chargeGroups": [
+      {
+        "_id": {
+          "$oid": "60a1b2c3d4e5f6789abcdef4"
+        },
+        "chargeGroupName": "Express Charges",
+        "chargeProfileGroups": [
+          {
+            "$oid": "67d112e88205a525e17e1052"
+          }
+        ],
+        "charges": [
+          {
+            "chargeType": "express_freight",
+            "amount": 250.00,
+            "currency": "USD"
+          }
+        ]
+      }
+    ],
+    "origin": "Chicago, IL",
+    "destination": "Miami, FL"
+  },
+  {
+    "_id": {
+      "$oid": "60a1b2c3d4e5f6789abcdef5"
+    },
+    "rateId": "RATE003",
+    "rateName": "International Rate",
+    "effectiveDate": "2024-01-01",
+    "chargeGroups": [],
+    "origin": "Seattle, WA",
+    "destination": "Vancouver, BC"
+  },
+  {
+    "_id": {
+      "$oid": "60a1b2c3d4e5f6789abcdef6"
+    },
+    "rateId": "RATE004",
+    "rateName": "Local Delivery Rate",
+    "effectiveDate": "2024-01-01",
+    "chargeGroups": [
+      {
+        "_id": {
+          "$oid": "60a1b2c3d4e5f6789abcdef7"
+        },
+        "chargeGroupName": "Local Charges",
+        "charges": [
+          {
+            "chargeType": "local_delivery",
+            "amount": 35.00,
+            "currency": "USD"
+          }
+        ]
+      }
+    ],
+    "origin": "Downtown",
+    "destination": "Suburbs"
+  }
+]
